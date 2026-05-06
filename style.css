@@ -1,0 +1,673 @@
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/*style general de tous le corps de la page sauf index  */
+body {
+    min-height: 100vh;
+    background-image: url("photos/d088e68f415320da7022fc3504b1e74d (1).jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* page index */
+
+body.index{
+
+    height: 100vh;
+    background-image: url("toph/bureau-ecole-dans-salle-classe-livres-fond-tableau-formules-ecrites_89381-115.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* pour que le contenu soit bien centrer */
+body.index .hopital{
+    /* facultatif */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+    
+}
+
+body.index .hopital h3{
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: black;
+    color:skyblue;
+
+}
+body.index .hopital p{
+    font-size: 18px;
+    margin: 30px;
+    color: black;
+    color:thistle;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 15px 40px;
+    background-color: #0b5ed7;
+    color: black;
+    font-size: 18px;
+    border-radius: 30px;
+    transition:0.3;
+
+
+}
+.btn:hover{
+    background-color:red; 
+}
+
+
+
+
+/* ===== ANIMATION TITRE ===== */
+.hopital h3 {
+    font-size: 48px;
+    margin-bottom: 15px;
+
+    animation: glow 2s ease-in-out;
+}
+
+@keyframes glow {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 15px #1e90ff, 0 0 30px #1e90ff;
+    }
+}
+
+/* ===== ANIMATION TEXTE ===== */
+.hopital p {
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    animation: fadeText 2s ease-in-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        text-shadow: 0 0 10px white;
+    }
+}
+
+
+/* ===== BOUTON ===== */
+.btn {
+    text-decoration: none;
+    padding: 15px 40px;
+    background: #1e90ff;
+    color: white;
+    border-radius: 30px;
+    font-size: 18px;
+
+    animation: btnShow 1.5s ease;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes btnShow {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* page confidentialiter */
+
+/* Réinitialisation simple */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Corps de page */
+body.confi {
+    min-height: 100vh;
+    background-image: url("photos/d088e68f415320da7022fc3504b1e74d (1).jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container du texte */
+body.confi main {
+    background-color: black;
+    padding: 40px 50px;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    
+}
+
+/* Titre */
+body.confi main h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e90ff;
+}
+
+/* Paragraphes */
+main p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: white;
+    font-size: 16px;
+}
+
+/* Bouton */
+.bt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    /* pour que le bouton soit bien cadrer au milieu */
+
+
+
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 30px;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    transition: 0.3s;
+    margin-top: 10px;
+    text-align: center;
+
+    
+}
+
+.button:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+
+/* page formu_entrer.html */
+
+/* Container formulaire */
+body.formu main {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px 50px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+body.formu h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e90ff;
+}
+
+/* Formulaire */
+body.formu form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Bouton */
+form .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    background-color: #1e90ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form .btn:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+
+
+/* page hopitaux */
+
+/* main */
+body.hopital main{
+    max-width: 1200px;
+    /* margin: 80px auto; */
+    padding: 0 30px;
+    background-color: white;
+
+
+}
+
+/* Titre principal */
+body.hopital h1 {
+    text-align: center;
+    color: #1e90ff;
+    margin-bottom: 40px;
+}
+
+
+/* barre de recherche */
+.barre{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.barre{
+    max-width: 1200px;
+    width: 90%;
+    padding: 12px;
+    border-radius: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Sections */
+.hospital-section {
+    margin-bottom: 50px;
+    background-color: cadetblue;
+    padding: 30px;
+}
+
+/* Titre section */
+.hospital-section h2 {
+    color: #0b5ed7;
+    margin-bottom: 20px;
+}
+
+/* premier div de la section */
+.liste1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* sous div de la section */
+.org {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cartes par ligne */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.org:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Carte titre */
+.org h3 {
+    margin-bottom: 10px;
+    color: #1e90ff;
+}
+
+/* Carte texte */
+.org p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+/* Bouton du sous div */
+.org .btn {
+    padding: 10px 25px;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.org .btn:hover {
+    background-color: #0b5ed7;
+}
+
+
+
+/* page departement */
+
+main {
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+
+    background-color: wheat;
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #005fa3;
+}
+
+/* Section départements */
+#branche {
+    display: flex;
+    gap: 20px;
+    /* overflow-x: auto;  */
+    /* permet le défilement horizontal si écran petit */
+    padding-bottom: 10px;
+    background-color: red;
+
+}
+
+/* Carte département */
+.departement {
+    background-color: cadetblue;
+    /* min-width: 220px; */
+    padding: 20px;
+    margin: 50px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.departement h3 {
+    margin-bottom: 10px;
+    color: #0077cc;
+}
+
+.departement p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.departement button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 20px;
+    background-color: #005fa3;
+    color: white;
+    cursor: pointer;
+}
+
+.departement button:hover {
+    background-color: #00457a;
+}
+
+
+/* page paye */
+
+body.paye{
+background-image: url("photos/d088e68f415320da7022fc3504b1e74d (1).jpg"); 
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* .container{
+width:90%;
+margin:auto;
+padding:40px;
+text-align:center;
+} */
+
+h1{
+color:#005fa3;
+margin-bottom:20px;
+}
+
+.message{
+max-width:700px;
+margin:auto;
+margin-bottom:40px;
+font-size:16px;
+line-height:1.6;
+color:#333;
+}
+
+/* section paiement */
+
+.moyen_paiement{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+/* carte paiement */
+
+.mode{
+background:white;
+padding:25px;
+width:220px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.mode:hover{
+transform:translateY(-5px);
+}
+
+.mode h3{
+margin-bottom:10px;
+color:#0077cc;
+}
+
+.mode p{
+font-size:14px;
+margin-bottom:15px;
+}
+
+/* bouton */
+
+.mode button{
+padding:10px 20px;
+border:none;
+border-radius:20px;
+background:#005fa3;
+color:white;
+cursor:pointer;
+}
+
+.mode button:hover{
+background:#00457a;
+}
+
+
+/* page montant */
+
+body{
+background:#f2f6f9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background-image: url("photos/d088e68f415320da7022fc3504b1e74d (1).jpg"); 
+}
+
+h1{
+color:#005fa3;
+margin-bottom:15px;
+}
+
+.info{
+font-size:14px;
+margin-bottom:25px;
+color:#444;
+}
+
+/* formulaire */
+
+.formulaire{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.formulaire label{
+text-align:left;
+font-weight:bold;
+}
+
+.formulaire input{
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+.formulaire button{
+padding:10px;
+border:none;
+background:#005fa3;
+color:white;
+border-radius:20px;
+cursor:pointer;
+}
+
+.formulaire button:hover{
+background:#00457a;
+}
+
+
+/* page fiche consultation */
+
+body.consu{
+background:#f2f6f9;
+background-image: url("photos/d088e68f415320da7022fc3504b1e74d (1).jpg"); 
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+main{
+width:650px;
+margin:auto;
+padding:30px;
+}
+
+h1{
+text-align:center;
+color:#005fa3;
+margin-bottom:15px;
+}
+
+.phrase{
+text-align:center;
+margin-bottom:30px;
+color:#444;
+}
+
+.fiche{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+h2{
+margin-top:20px;
+color:#0077cc;
+}
+
+label{
+font-weight:bold;
+}
+
+input, textarea, select{
+padding:7px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+height:80px;
+}
+
+button{
+margin-top:20px;
+padding:12px;
+border:none;
+background:#005fa3;
+color:white;
+font-size:16px;
+border-radius:25px;
+cursor:pointer;
+}
+
+button:hover{
+background:#00457a;
+}
+
+/* page cabinet */
+body.cabinet{
+    background-image: url("photos/f9415c97f88d311456b02600eedfe347.jpg");
+    
+}
